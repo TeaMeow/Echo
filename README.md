@@ -9,8 +9,7 @@
 
 # Speaker
 
-擴音器是一個基於 [Server-Sent Event](http://www.html5rocks.com/en/tutorials/eventsource/basics/) 服務的 PHP 函式庫的，
-用以向客戶端廣播不間斷且持續性連線地單向訊息，
+擴音器是一個基於 [Server-Sent Event](http://www.html5rocks.com/en/tutorials/eventsource/basics/) 服務的 PHP 函式庫的，用以向客戶端廣播不間斷且持續性連線地單向訊息，
 
 很適合用在類似推特（Twitter）或是聊天室這樣需要推播即時通知的網站。
 
