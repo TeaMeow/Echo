@@ -1,0 +1,53 @@
+<html>
+<meta charset="utf-8">
+<head>
+<title>伺服器負載</title>
+<link rel="stylesheet" href="style/tocas.css">
+<link rel="stylesheet" href="style/style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+    <script>
+    $(function()
+    {
+        /** 開始 SSE */
+        var data = new EventSource('server.php');
+        
+        /** 當 SSE 接收到訊息，就輸出到網頁上 */
+        data.addEventListener('message',function(e)
+        {
+                content = '<div style="margin-bottom: 8px">' + e.data + '</div>'
+			
+			$('#pusher').append(content);
+	
+        }, false);
+ 
+    })
+    </script>
+    
+    <!-- 標題 -->
+    <div id="upper">
+        <h3 class="ts header">
+            伺服器負載
+            <div class="sub header">持續顯示伺服器負載的範例。</div>
+        </h3>
+    </div>
+    <!-- / 標題 -->
+    
+    <!-- 聊天室主體 -->
+    <div id="outer">
+        
+        <div class="ts card">
+            <div class="content">
+                
+                <!-- 推播內容 -->
+                <div id="pusher"></div>
+                <!-- /推播內容 -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- / 聊天室主體 -->
+    
+</body>
+</html>
