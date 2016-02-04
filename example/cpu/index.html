@@ -16,9 +16,9 @@
         /** 當 SSE 接收到訊息，就輸出到網頁上 */
         data.addEventListener('message',function(e)
         {
-                content = '<div style="margin-bottom: 8px">' + e.data + '</div>'
-			
-			$('#pusher').append(content);
+            content = '<div style="margin-bottom: 8px">' + e.data + '</div>'
+	
+            $('#pusher').append(content);
 	
         }, false);
  
