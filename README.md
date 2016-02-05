@@ -84,5 +84,6 @@ $speaker->start();
 
 # 可參考文件
 
-[libSSE-php](https://github.com/licson0729/libSSE-php)
-[EventSource](https://github.com/igorw/EventSource)
+[licson0729@libSSE-php](https://github.com/licson0729/libSSE-php)
+
+[igorw@EventSource](https://github.com/igorw/EventSource)
